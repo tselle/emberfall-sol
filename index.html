@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#101217"><title>Emberfall — The Emberwild Saga</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+<symbol id="flame" viewBox="0 0 24 24"><path d="M13 2c1 6-4 7-3 12 1-1 3-2 4-5 3 4 5 6 4 9-1 4-10 5-12 0C4 13 8 8 9 8c-1 3 0 4 0 4 0-4 4-6 4-10Z"/><path d="M12 15c-1 2-2 2-2 4a2 2 0 0 0 4 0c0-1-1-3-2-4Z"/></symbol>
+<symbol id="swords" viewBox="0 0 24 24"><path d="m4 3 4 1 11 12-3 3L4 7 4 3Zm13 15 3 3m-5-1 5-5M20 3l-4 1-4 5M9 13l-4 4m-2 4 4-4m-4-2 6 6"/></symbol>
+<symbol id="shield" viewBox="0 0 24 24"><path d="M12 2 4 6v5c0 5 4 8 8 11 4-3 8-6 8-11V6l-8-4Zm0 5v10m-4-6h8"/></symbol>
+<symbol id="compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m16 8-2 6-6 2 2-6 6-2Z"/></symbol>
+<symbol id="eye" viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="2.5"/></symbol>
+<symbol id="camp" viewBox="0 0 24 24"><path d="m3 20 9-15 9 15H3Zm6 0 3-7 3 7M9 3l3 3 3-3"/></symbol>
+<symbol id="map" viewBox="0 0 24 24"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2V5Zm6-2v16m6-14v16"/></symbol>
+<symbol id="book" viewBox="0 0 24 24"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4Zm8 2v15M7 8h2m6 0h2M7 12h2m6 0h2"/></symbol>
+<symbol id="paw" viewBox="0 0 24 24"><path d="M7 18c0-2 3-5 5-5s5 3 5 5c0 3-3 1-5 1s-5 2-5-1Z"/><ellipse cx="5" cy="11" rx="1.7" ry="2.2"/><ellipse cx="10" cy="7" rx="1.7" ry="2.2"/><ellipse cx="15" cy="7" rx="1.7" ry="2.2"/><ellipse cx="19" cy="11" rx="1.7" ry="2.2"/></symbol>
+<symbol id="case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V4h8v3M3 12h18m-11-2h4v4h-4v-4Z"/></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+<symbol id="coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="5"/><path d="M12 9v6"/></symbol>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M20 16A9 9 0 0 1 8 4a9 9 0 1 0 12 12Z"/><path d="M17 4v6m-3-3h6"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M12 22s7-8 7-13A7 7 0 0 0 5 9c0 5 7 13 7 13Z"/><circle cx="12" cy="9" r="2"/></symbol>
+<symbol id="plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="pad" viewBox="0 0 24 24"><path d="M9 4h6v5h5v6h-5v5H9v-5H4V9h5V4Z"/></symbol>
+<symbol id="door" viewBox="0 0 24 24"><path d="M5 21h14M7 21V4h10v17m-4-8h1"/></symbol>
+</defs></svg>
+<header class="topbar"><div class="top-inner"><a class="brand" href="./index.html" aria-label="Emberfall home"><span class="brand-mark"><svg><use href="#flame"/></svg></span><span><strong>EMBERFALL</strong><small>THE EMBERWILD SAGA</small></span></a><div class="top-right"><span class="time" id="clock"></span><span class="gold" id="gold"></span><button class="top-menu" data-act="menu" aria-label="Game menu"><svg><use href="#menu"/></svg><span>Menu</span></button></div></div></header>
+<main class="shell">
+ <section class="chapter"><div><div class="eyebrow"><span class="diamond"></span><span id="chapter-label">ACT I · THE CELLARS OF THORNWICK</span></div><h1 id="location-title">Thornwick</h1><p id="location-sub">The last lanterns before the wilds.</p></div><button class="outline campaign-link" data-act="campaign"><svg><use href="#compass"/></svg> Campaign <span>↗</span></button></section>
+ <div class="layout">
+  <section class="panel party-panel"><div class="panel-head"><h2><svg><use href="#shield"/></svg> The Company</h2><span id="party-count" class="tag">4 / 6</span></div><div id="party"></div><button class="outline new" data-act="company"><svg><use href="#plus"/></svg> Manage Company</button></section>
+  <section class="scene-panel" aria-label="Game view"><div class="scene-head"><span><i></i> <b id="view-mode">EXPLORATION</b></span><span id="view-title">THORNWICK · LANTERN GATE</span><span id="direction">◇ N</span></div><div class="viewport" id="viewport"><canvas id="scene" width="480" height="336" aria-label="First-person exploration view"></canvas><div class="vignette"></div><span class="view-corner vc-tl"></span><span class="view-corner vc-tr"></span><span class="view-corner vc-bl"></span><span class="view-corner vc-br"></span><div id="scene-hint"></div><button class="pad-toggle" data-act="pad" aria-label="Toggle movement pad"><svg><use href="#pad"/></svg></button></div><div id="combat-controls" hidden></div><div class="scene-foot"><span id="scene-caption"><svg><use href="#pin"/></svg> Lantern Gate</span><span class="keyhelp"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Move <span class="key-dot">·</span> <kbd>Enter</kbd> Interact</span></div><div id="navpad" hidden></div></section>
+  <aside class="sidebar">
+   <section class="panel objective-panel"><div class="panel-head"><h2><svg><use href="#book"/></svg> Current Objective</h2></div><div id="objective"></div></section>
+   <section class="panel map-panel"><div class="panel-head"><h2><svg><use href="#compass"/></svg> Local Map</h2><button class="icon-small" data-act="map" aria-label="Expand local map" title="Expand map [M]">↗</button></div><div class="map-body"><canvas id="minimap" width="256" height="124" aria-label="Local map"></canvas><div class="map-legend"><span><i class="you"></i> Party</span><span><i class="site"></i> Landmark</span><span id="map-level">TOWN</span></div></div></section>
+   <section class="panel events-panel"><div class="panel-head"><h2><svg><use href="#flame"/></svg> Adventure Log</h2><button class="icon-small" data-act="journal" aria-label="Open journal" title="Open journal [J]">↗</button></div><div id="events" aria-live="polite"></div></section>
+  </aside>
+ </div>
+ <nav class="command-bar" aria-label="Game commands">
+ <button data-act="interact" class="primary-command"><svg><use href="#door"/></svg><span>Interact</span><kbd>↵</kbd></button><button data-act="search"><svg><use href="#eye"/></svg><span>Search</span><kbd>F</kbd></button><button data-act="camp"><svg><use href="#camp"/></svg><span>Camp</span><kbd>R</kbd></button><button data-act="map"><svg><use href="#map"/></svg><span>Map</span><kbd>M</kbd></button><button data-act="journal"><svg><use href="#book"/></svg><span>Journal</span><kbd>J</kbd></button><button data-act="bestiary"><svg><use href="#paw"/></svg><span>Bestiary</span><kbd>B</kbd></button><button data-act="inventory"><svg><use href="#case"/></svg><span>Inventory</span><kbd>I</kbd></button>
+ </nav>
+ <footer><span><i></i> <span id="save-indicator">Autosave active</span></span><span>EMBERFALL <b>◆</b> THE EMBERWILD SAGA</span><button data-act="help">How to Play <span>?</span></button></footer>
+</main>
+<dialog id="dialog"><div class="dialog-head"><div><div class="eyebrow"><span class="diamond"></span> EMBERFALL</div><h2 id="dialog-title"></h2></div><button class="close" data-act="close" aria-label="Close window">×</button></div><div id="dialog-body"></div></dialog>
+<script src="rules.js"></script><script src="data.js"></script><script src="modules.js"></script><script src="monsters.js"></script><script src="wilds.js"></script><script src="treasure.js"></script><script src="adventures.js"></script><script src="figures.js"></script><script src="view3d.js"></script><script src="ui.js"></script><script src="combat.js"></script><script src="overland.js"></script><script src="campaign.js"></script><script src="journal.js"></script><script src="map.js"></script><script src="bestiary.js"></script><script src="navpad.js"></script><script src="watch.js"></script><script src="game.js"></script>
+</body></html>
